@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: #e35f21;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursexchange.regController">
+   <top>
+      <AnchorPane prefHeight="98.0" prefWidth="322.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="105.0" fitWidth="123.0" layoutX="115.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../logo_black.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="fName" alignment="CENTER" layoutX="180.0" layoutY="68.0" prefHeight="38.0" prefWidth="137.0" promptText="First name" style="-fx-background-radius: 10px; -fx-border-style: solid; -fx-border-color: black; -fx-border-radius: 10px; -fx-faint-focus-color: transparent;">
+               <font>
+                  <Font name="Dubai Medium" size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:id="submitButton" alignment="CENTER" layoutX="98.0" layoutY="379.0" mnemonicParsing="false" onAction="#register" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: black; -fx-background-radius: 20px; -fx-border-style: solid; -fx-border-radius: 18; -fx-border-color: white;" text="Sign up" textFill="#e35f21">
+               <font>
+                  <Font name="Britannic Bold" size="21.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="pass" alignment="CENTER" layoutX="14.0" layoutY="320.0" prefHeight="42.0" prefWidth="161.0" promptText="Password" style="-fx-background-radius: 10px; -fx-border-style: solid; -fx-border-color: black; -fx-border-radius: 10px; -fx-faint-focus-color: transparent;">
+               <font>
+                  <Font name="Dubai Regular" size="15.0" />
+               </font>
+            </PasswordField>
+            <Label alignment="CENTER" layoutX="48.0" layoutY="445.0" text="Already have an account? Log in ">
+               <font>
+                  <Font name="Dubai Regular" size="15.0" />
+               </font>
+            </Label>
+            <Hyperlink alignment="CENTER" layoutX="239.0" layoutY="442.0" onAction="#loadLog" prefHeight="34.0" prefWidth="47.0" style="-fx-border-color: transparent;" text="here!" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Dubai Regular" size="15.0" />
+               </font>
+            </Hyperlink>
+            <Text layoutX="99.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke-width: 1px; -fx-fill: black; -fx-stroke: white;" text="Sign up" wrappingWidth="136.5367431640625">
+               <font>
+                  <Font name="Britannic Bold" size="40.0" />
+               </font>
+            </Text>
+            <TextField fx:id="lName" alignment="CENTER" layoutX="15.0" layoutY="97.0" prefHeight="38.0" prefWidth="140.0" promptText="Last name" style="-fx-background-radius: 10px; -fx-border-style: solid; -fx-border-color: black; -fx-border-radius: 10px; -fx-faint-focus-color: transparent;">
+               <font>
+                  <Font name="Dubai Medium" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="userName" alignment="CENTER" layoutX="129.0" layoutY="150.0" prefHeight="38.0" prefWidth="191.0" promptText="Username (Kiwito)" style="-fx-background-radius: 10px; -fx-border-style: solid; -fx-border-color: black; -fx-border-radius: 10px; -fx-faint-focus-color: transparent;">
+               <font>
+                  <Font name="Dubai Medium" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="email" alignment="CENTER" layoutX="129.0" layoutY="263.0" prefHeight="38.0" prefWidth="191.0" promptText="Email" style="-fx-background-radius: 10px; -fx-border-style: solid; -fx-border-color: black; -fx-border-radius: 10px; -fx-faint-focus-color: transparent;">
+               <font>
+                  <Font name="Dubai Medium" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="pNumber" alignment="CENTER" layoutX="14.0" layoutY="208.0" prefHeight="38.0" prefWidth="182.0" promptText="Phone number" style="-fx-background-radius: 10px; -fx-border-style: solid; -fx-border-color: black; -fx-border-radius: 10px; -fx-faint-focus-color: transparent;">
+               <font>
+                  <Font name="Dubai Medium" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="335.0" style="-fx-background-color: #e35f21;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coursexchange.HelloController">
+   <top>
+      <AnchorPane prefHeight="98.0" prefWidth="322.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="105.0" fitWidth="123.0" layoutX="115.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../logo_black.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="CENTER" layoutX="100.0" layoutY="354.0" mnemonicParsing="false" onAction="#loadHome" prefHeight="53.0" prefWidth="135.0" style="-fx-background-color: black; -fx-background-radius: 20px; -fx-border-style: solid; -fx-border-radius: 19px; -fx-border-color: white;" text="Home" textFill="#e35f21">
+               <font>
+                  <Font name="Britannic Bold" size="21.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="239.0" layoutY="442.0" />
+            <Text fill="WHITE" layoutX="10.0" layoutY="229.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="Return to the home page." wrappingWidth="314.98167419433594">
+               <font>
+                  <Font name="Britannic Bold" size="27.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="10.0" layoutY="162.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="The announcement is uploaded successfully!" wrappingWidth="314.98167419433594">
+               <font>
+                  <Font name="Britannic Bold" size="27.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
